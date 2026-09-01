@@ -12,12 +12,12 @@ export function StudentBranchSection() {
           <div className="mx-auto max-w-xl md:mx-0">
             <h2
               id="student-branch-title"
-              className="text-3xl font-bold tracking-tight sm:text-4xl"
+              className="text-3xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
               O Ramo Estudantil IEEE
             </h2>
 
-            <div className="mt-6 space-y-4 text-base leading-7 text-white/90">
+            <div className="mt-6 space-y-4 text-base font-normal leading-7 text-white sm:text-lg lg:text-2xl lg:leading-9">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                 semper risus at leo auctor, ac cursus erat cursus. Cras eu diam

@@ -4,12 +4,16 @@
   --background: #ffffff;
   --foreground: #1f2937;
   --ieee-blue: #0a70a3;
+  --content-primary: #2a313f;
+  --content-secondary: #626c79;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-ieee-blue: var(--ieee-blue);
+  --color-content-primary: var(--content-primary);
+  --color-content-secondary: var(--content-secondary);
   --font-sans: var(--font-inter), "Inter", sans-serif;
   --font-mono: var(--font-geist-mono);
 }

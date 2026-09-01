@@ -13,12 +13,12 @@ export function BoardSection() {
         <header className="mx-auto max-w-2xl text-center">
           <h2
             id="board-title"
-            className="text-3xl font-bold tracking-tight text-slate-800 sm:text-4xl"
+            className="text-3xl font-semibold leading-tight tracking-tight text-content-primary sm:text-4xl lg:text-5xl"
           >
             Conheça Nossa Diretoria
           </h2>
 
-          <p className="mt-4 text-base leading-7 text-slate-600">
+          <p className="mt-4 text-base font-normal leading-7 text-content-secondary sm:text-lg lg:text-2xl lg:leading-9">
             Maecenas tincidunt justo metus. Donec malesuada ipsum eu tortor
             rhoncus sollicitudin. Nullam non blandit enim, vitae ultrices
             sapien.
@@ -38,11 +38,13 @@ export function BoardSection() {
                 />
               </div>
 
-              <h3 className="mt-4 text-sm font-semibold text-slate-800 sm:text-base">
+              <h3 className="mt-4 text-base font-bold leading-7 text-content-primary md:text-xl">
                 {member.name}
               </h3>
 
-              <p className="mt-1 text-sm text-slate-500">{member.role}</p>
+              <p className="mt-1 text-base font-normal leading-7 text-content-secondary md:text-xl">
+                {member.role}
+              </p>
             </li>
           ))}
         </ul>

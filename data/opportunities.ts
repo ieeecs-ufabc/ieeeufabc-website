@@ -12,7 +12,7 @@ export const opportunities: Opportunity[] = [
     id: "opportunity-1",
     title: "Letramento Digital - Processo Seletivo",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum euismod urna.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent  fermentum euismod urna, ac sagittis augue fermentum quis. In hac  habitasse platea dictumst.",
     deadline: "Inscrições até 02/08",
     chapter: "Computer Society",
     image: "/images/opportunities/computer-society.png",
@@ -21,7 +21,7 @@ export const opportunities: Opportunity[] = [
     id: "opportunity-2",
     title: "Letramento Digital - Processo Seletivo",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum euismod urna.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent  fermentum euismod urna, ac sagittis augue fermentum quis. In hac  habitasse platea dictumst.",
     deadline: "Inscrições até 02/08",
     chapter: "Computer Society",
     image: "/images/opportunities/computer-society.png",
@@ -30,7 +30,7 @@ export const opportunities: Opportunity[] = [
     id: "opportunity-3",
     title: "Letramento Digital - Processo Seletivo",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum euismod urna.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent  fermentum euismod urna, ac sagittis augue fermentum quis. In hac  habitasse platea dictumst.",
     deadline: "Inscrições até 02/08",
     chapter: "Computer Society",
     image: "/images/opportunities/computer-society.png",

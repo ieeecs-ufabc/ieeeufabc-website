@@ -20,7 +20,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-ieee-blue text-white shadow-sm">
-      <div className="mx-auto flex min-h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
+      <div className="mx-auto flex min-h-16 max-w-7xl items-center justify-between px-5 sm:px-8 md:min-h-20">
         <a
           href="#inicio"
           className="flex items-center"
@@ -30,10 +30,10 @@ export function Header() {
           <Image
             src="/images/logos/ieee-ufabc-logo.svg"
             alt="IEEE UFABC"
-            width={110}
-            height={44}
+            width={103}
+            height={45}
             priority
-            className="h-10 w-auto"
+            className="h-10 w-auto object-contain md:h-[44.82px] md:w-[102.63px]"
           />
         </a>
 
@@ -43,7 +43,7 @@ export function Header() {
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="text-sm font-medium transition-colors hover:text-white/75 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                  className="text-xl font-semibold text-white transition-colors hover:text-white/75 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
                 >
                   {item.label}
                 </a>
@@ -96,7 +96,7 @@ export function Header() {
                 <a
                   href={item.href}
                   onClick={closeMenu}
-                  className="block rounded-md px-3 py-3 text-sm font-medium transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-white"
+                  className="block rounded-md px-3 py-3 text-base font-semibold text-white transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-white"
                 >
                   {item.label}
                 </a>

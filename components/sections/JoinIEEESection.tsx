@@ -24,9 +24,9 @@ export function JoinIEEESection() {
           </p>
         </header>
 
-        <ul className="mt-12 grid gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3">
+        <ul className="mt-12 grid gap-y-12 md:grid-cols-2 md:justify-items-center md:gap-x-12 xl:grid-cols-[repeat(3,360px)] xl:justify-between xl:gap-x-0">
           {opportunities.map((opportunity, index) => (
-            <li key={opportunity.id}>
+            <li key={opportunity.id} className="mx-auto w-full max-w-90">
               <article>
                 <div className="relative aspect-16/10 overflow-hidden rounded-xl">
                   <Image

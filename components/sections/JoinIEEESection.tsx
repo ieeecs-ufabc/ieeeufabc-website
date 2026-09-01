@@ -18,8 +18,9 @@ export function JoinIEEESection() {
             Faça Parte da IEEE
           </h2>
 
-          <p className="mt-4 text-base font-normal leading-7 text-content-secondary sm:text-lg lg:text-2xl lg:leading-9">
-            Maecenas tincidunt justo metus. Donec malesuada ipsum eu tortor rhoncus sollicitudin.
+          <p className="mt-4 text-base font-normal leading-7 text-content-secondary sm:text-lg lg:text-xl lg:leading-8">
+            Maecenas tincidunt justo metus. Donec malesuada ipsum eu tortor
+            rhoncus sollicitudin.
           </p>
         </header>
 
@@ -38,16 +39,16 @@ export function JoinIEEESection() {
                   />
                 </div>
 
-                <div className="mt-4 flex items-center justify-between gap-4 text-sm text-content-secondary">
+                <div className="mt-4 flex items-center justify-between gap-4 text-sm font-semibold leading-5 text-content-primary">
                   <span>{opportunity.deadline}</span>
                   <span>{opportunity.chapter}</span>
                 </div>
 
-                <h3 className="mt-3 text-xl font-semibold leading-7 text-content-primary">
+                <h3 className="mt-3 text-xl font-semibold leading-7 text-content-primary lg:text-2xl lg:leading-8">
                   {opportunity.title}
                 </h3>
 
-                <p className="mt-2 text-base font-normal leading-6 text-content-secondary">
+                <p className="mt-2 text-base font-normal leading-6 text-content-secondary lg:text-xl lg:leading-8">
                   {opportunity.description}
                 </p>
               </article>

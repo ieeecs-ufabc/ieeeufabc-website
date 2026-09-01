@@ -10,7 +10,7 @@ export function BoardSection() {
       className="scroll-mt-16 bg-white px-6 py-20 sm:px-8 sm:py-24"
     >
       <div className="mx-auto max-w-6xl">
-        <header className="mx-auto max-w-2xl text-center">
+        <header className="mx-auto w-full max-w-220.5 text-center">
           <h2
             id="board-title"
             className="text-3xl font-semibold leading-tight tracking-tight text-content-primary sm:text-4xl lg:text-5xl"

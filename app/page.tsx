@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { StudentBranchSection } from "@/components/sections/StudentBranchSection";
 import { BoardSection } from "@/components/sections/BoardSection";
+import { JoinIEEESection } from "@/components/sections/JoinIEEESection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
 
         <StudentBranchSection />
         <BoardSection />
+        <JoinIEEESection />
       </main>
     </>
   );

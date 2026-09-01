@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { StudentBranchSection } from "@/components/sections/StudentBranchSection";
+import { BoardSection } from "@/components/sections/BoardSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         </section>
 
         <StudentBranchSection />
+        <BoardSection />
       </main>
     </>
   );

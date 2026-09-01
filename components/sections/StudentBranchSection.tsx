@@ -8,7 +8,7 @@ export function StudentBranchSection() {
       className="scroll-mt-16"
     >
       <div className="grid md:grid-cols-2">
-        <div className="flex items-center bg-[#00629B] px-6 py-12 text-white sm:px-10 md:px-12 lg:px-16">
+        <div className="flex items-center bg-ieee-blue px-6 py-12 text-white sm:px-10 md:px-12 lg:px-16">
           <div className="mx-auto max-w-xl md:mx-0">
             <h2
               id="student-branch-title"
@@ -44,6 +44,7 @@ export function StudentBranchSection() {
             src="/images/branch/ufabc-campus.png"
             alt="Campus da Universidade Federal do ABC"
             fill
+            loading="eager"
             sizes="(min-width: 768px) 50vw, 100vw"
             className="object-cover"
           />

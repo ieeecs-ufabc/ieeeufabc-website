@@ -1,4 +1,5 @@
 import { Header } from "@/components/layout/Header";
+import { StudentBranchSection } from "@/components/sections/StudentBranchSection";
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
             IEEE UFABC
           </h1>
         </section>
+
+        <StudentBranchSection />
       </main>
     </>
   );

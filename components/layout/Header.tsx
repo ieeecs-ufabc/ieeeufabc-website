@@ -19,7 +19,7 @@ export function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 bg-[#00629B] text-white shadow-sm">
+    <header className="sticky top-0 z-50 bg-ieee-blue text-white shadow-sm">
       <div className="mx-auto flex min-h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
         <a
           href="#inicio"

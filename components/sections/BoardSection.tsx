@@ -13,7 +13,7 @@ export function BoardSection() {
         <header className="mx-auto w-full max-w-220.5 text-center">
           <h2
             id="board-title"
-            className="text-3xl font-semibold leading-tight tracking-tight text-content-primary sm:text-4xl lg:text-5xl"
+            className="text-3xl font-semibold leading-tight tracking-tight text-content-primary sm:text-4xl"
           >
             Conheça Nossa Diretoria
           </h2>

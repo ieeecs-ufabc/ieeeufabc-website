@@ -7,13 +7,13 @@ export function JoinIEEESection() {
     <section
       id="faca-parte"
       aria-labelledby="join-ieee-title"
-      className="scroll-mt-20 bg-white px-6 py-20 sm:px-8 sm:py-24"
+      className="scroll-mt-16 flex min-h-[calc(100svh-4rem)] w-full items-center bg-white px-6 py-8 sm:px-8 sm:py-10"
     >
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto w-full max-w-7xl">
         <header className="max-w-220.5">
           <h2
             id="join-ieee-title"
-            className="text-3xl font-semibold leading-tight tracking-tight text-content-primary sm:text-4xl lg:text-5xl"
+            className="text-3xl font-semibold leading-tight tracking-tight text-content-primary sm:text-4xl"
           >
             Faça Parte da IEEE
           </h2>
@@ -24,11 +24,11 @@ export function JoinIEEESection() {
           </p>
         </header>
 
-        <ul className="mt-12 grid gap-y-12 md:grid-cols-2 md:justify-items-center md:gap-x-12 xl:grid-cols-[repeat(3,360px)] xl:justify-between xl:gap-x-0">
+        <ul className="mt-8 grid gap-y-10 md:grid-cols-2 md:justify-items-center md:gap-x-12 xl:grid-cols-3 xl:gap-x-16">
           {opportunities.map((opportunity, index) => (
             <li key={opportunity.id} className="mx-auto w-full max-w-90">
               <article>
-                <div className="relative aspect-16/10 overflow-hidden rounded-xl">
+                <div className="relative aspect-video overflow-hidden rounded-xl">
                   <Image
                     src={opportunity.image}
                     alt=""
@@ -44,11 +44,11 @@ export function JoinIEEESection() {
                   <span>{opportunity.chapter}</span>
                 </div>
 
-                <h3 className="mt-3 text-xl font-semibold leading-7 text-content-primary lg:text-2xl lg:leading-8">
+                <h3 className="mt-3 text-xl font-semibold leading-7 text-content-primary 2xl:text-2xl 2xl:leading-8">
                   {opportunity.title}
                 </h3>
 
-                <p className="mt-2 text-base font-normal leading-6 text-content-secondary lg:text-xl lg:leading-8">
+                <p className="mt-2 text-base font-normal leading-6 text-content-secondary lg:text-lg lg:leading-7 2xl:text-xl 2xl:leading-8">
                   {opportunity.description}
                 </p>
               </article>

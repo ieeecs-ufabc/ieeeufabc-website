@@ -14,9 +14,9 @@ const navigationItems = [
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  function closeMenu() {
-    setIsMenuOpen(false);
-  }
+  const handleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-ieee-blue text-white shadow-sm">
@@ -25,7 +25,7 @@ export function Header() {
           href="#inicio"
           className="flex items-center"
           aria-label="Ir para o início"
-          onClick={closeMenu}
+          onClick={()=> setIsMenuOpen(false)}
         >
           <Image
             src="/images/logos/ieee-ufabc-logo.svg"
@@ -58,7 +58,7 @@ export function Header() {
           aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={isMenuOpen}
           aria-controls="mobile-navigation"
-          onClick={() => setIsMenuOpen((currentValue) => !currentValue)}
+          onClick={handleMenu}
         >
           <span className="sr-only">
             {isMenuOpen ? "Fechar menu" : "Abrir menu"}
@@ -95,7 +95,7 @@ export function Header() {
               <li key={item.href}>
                 <a
                   href={item.href}
-                  onClick={closeMenu}
+                  onClick={handleMenu}
                   className="block rounded-md px-3 py-3 text-base font-semibold text-white transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-white"
                 >
                   {item.label}

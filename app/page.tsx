@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/Header";
 import { StudentBranchSection } from "@/components/sections/StudentBranchSection";
 import { BoardSection } from "@/components/sections/BoardSection";
 import { JoinIEEESection } from "@/components/sections/JoinIEEESection";
+import { VolunteersSection } from "@/components/sections/VolunteersSection";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
 
         <StudentBranchSection />
         <BoardSection />
+        <VolunteersSection />
         <JoinIEEESection />
       </main>
     </>

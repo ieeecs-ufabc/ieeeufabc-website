@@ -17,7 +17,6 @@ export function HeroSection() {
                         priority
                     />
 
-
                     <div className="hidden sm:block h-[247px] lg:h-[246px] w-[10px] bg-ieee-blue rounded-full shrink-0" />
 
                     <Image

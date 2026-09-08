@@ -6,7 +6,7 @@ export function ImpactSection() {
             </h1>
 
 
-            <p className="mt-3 max-w-2xl text-sm sm:text-base text-white/90 font-light">
+            <p className="mt-4 text-base font-normal leading-7 text-content-secondary sm:text-lg lg:text-xl lg:leading-8 text-white">
                 Maecenas tincidunt justo metus. Donec malesuada ipsum eu tortor rhoncus sollicitudin.
             </p>
 
@@ -15,22 +15,22 @@ export function ImpactSection() {
 
                 <div id="impacted-people" className="flex flex-col items-center justify-center space-y-2">
                     <span className="text-3xl sm:text-4xl font-semibold tracking-tight">+10.000</span>
-                    <p className="text-base sm:text-lg font-normal text-white/90">Pessoas Impactadas</p>
+                    <p className="text-base sm:text-lg font-normal text-white">Pessoas Impactadas</p>
                 </div>
 
                 <div className="flex flex-col items-center justify-center space-y-2">
                     <span id="completed-projects" className="text-3xl sm:text-4xl font-semibold tracking-tight">+15</span>
-                    <p className="text-base sm:text-lg font-normal text-white/90">Projetos Realizados</p>
+                    <p className="text-base sm:text-lg font-normal text-white">Projetos Realizados</p>
                 </div>
 
                 <div className="flex flex-col items-center justify-center space-y-2">
                     <span id="courses-taught" className="text-3xl sm:text-4xl font-semibold tracking-tight">+10</span>
-                    <p className="text-base sm:text-lg font-normal text-white/90">Cursos Ministrados</p>
+                    <p className="text-base sm:text-lg font-normal text-white">Cursos Ministrados</p>
                 </div>
 
                 <div className="flex flex-col items-center justify-center space-y-2">
                     <span id="active-members" className="text-3xl sm:text-4xl font-semibold tracking-tight">+50</span>
-                    <p className="text-base sm:text-lg font-normal text-white/90">Membros Ativos</p>
+                    <p className="text-base sm:text-lg font-normal text-white">Membros Ativos</p>
                 </div>
             </div>
         </section>

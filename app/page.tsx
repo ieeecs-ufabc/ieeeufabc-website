@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/Header";
 import { StudentBranchSection } from "@/components/sections/StudentBranchSection";
 import { BoardSection } from "@/components/sections/BoardSection";
 import { JoinIEEESection } from "@/components/sections/JoinIEEESection";
+import { HeroSection } from "@/components/sections/HeroSection";
 
 export default function Home() {
   return (
@@ -9,12 +10,7 @@ export default function Home() {
       <Header />
 
       <main id="inicio">
-        <section className="flex min-h-screen items-center justify-center px-6">
-          <h1 className="text-center text-4xl font-bold text-ieee-blue">
-            IEEE UFABC
-          </h1>
-        </section>
-
+        <HeroSection />
         <StudentBranchSection />
         <BoardSection />
         <JoinIEEESection />

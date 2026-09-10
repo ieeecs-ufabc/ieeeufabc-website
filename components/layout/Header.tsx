@@ -25,7 +25,7 @@ export function Header() {
           href="#inicio"
           className="flex items-center"
           aria-label="Ir para o início"
-          onClick={()=> setIsMenuOpen(false)}
+          onClick={() => setIsMenuOpen(false)}
         >
           <Image
             src="/images/logos/ieee-ufabc-logo.svg"
@@ -66,19 +66,16 @@ export function Header() {
 
           <span className="flex flex-col gap-1.5" aria-hidden="true">
             <span
-              className={`block h-0.5 w-6 bg-white transition-transform ${
-                isMenuOpen ? "translate-y-2 rotate-45" : ""
-              }`}
+              className={`block h-0.5 w-6 bg-white transition-transform ${isMenuOpen ? "translate-y-2 rotate-45" : ""
+                }`}
             />
             <span
-              className={`block h-0.5 w-6 bg-white transition-opacity ${
-                isMenuOpen ? "opacity-0" : ""
-              }`}
+              className={`block h-0.5 w-6 bg-white transition-opacity ${isMenuOpen ? "opacity-0" : ""
+                }`}
             />
             <span
-              className={`block h-0.5 w-6 bg-white transition-transform ${
-                isMenuOpen ? "-translate-y-2 -rotate-45" : ""
-              }`}
+              className={`block h-0.5 w-6 bg-white transition-transform ${isMenuOpen ? "-translate-y-2 -rotate-45" : ""
+                }`}
             />
           </span>
         </button>

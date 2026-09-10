@@ -5,7 +5,7 @@ export type ChapterItem = {
     image: string;
 };
 
-export const chapterItem: ChapterItem[] = [
+export const chapterItems: ChapterItem[] = [
     {
         id: "chapter-1",
         name: "Aeroespace & Eletronic Systems Society",

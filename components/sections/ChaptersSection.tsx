@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { chapterItem, ChapterItem } from "@/data/chapters"
+import { chapterItems } from "@/data/chapters"
 
 export function ChaptersSection() {
     return (
@@ -23,7 +23,7 @@ export function ChaptersSection() {
                     </header>
 
                     <ul className="mt-14 grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 sm:gap-x-10 lg:gap-y-16">
-                        {chapterItem.map((chapter) => (
+                        {chapterItems.map((chapter) => (
                             <li key={chapter.id} className="text-center">
                                 <div className="relative mx-auto h-28 w-28 overflow-hidden sm:h-36 sm:w-36">
                                     <Image

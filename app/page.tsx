@@ -5,6 +5,7 @@ import { JoinIEEESection } from "@/components/sections/JoinIEEESection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ChaptersSection } from "@/components/sections/ChaptersSection";
 import { ImpactSection } from "@/components/sections/ImpactSection";
+import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
         <BoardSection />
         <JoinIEEESection />
       </main>
+
+      <Footer />
     </>
   );
 }

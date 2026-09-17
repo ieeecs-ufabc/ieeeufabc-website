@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+
 import {
   chapterPages,
   getChapterPageBySlug,
@@ -56,6 +57,7 @@ export default async function ChapterPage({
 
       <main id="inicio" className="flex-1">
         <section
+          id="computer-society"
           aria-labelledby="chapter-title"
           className="flex min-h-[calc(100svh-4rem)] items-center justify-center px-6 py-16"
         >

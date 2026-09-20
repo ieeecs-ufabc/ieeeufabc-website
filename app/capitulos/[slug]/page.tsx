@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { ChapterAboutSection } from "@/components/chapters/ChapterAboutSection";
+import { ChapterEventsSection } from "@/components/chapters/ChapterEventsSection";
 
 import { chapterPages, getChapterPageBySlug } from "@/data/chapterPages";
 
@@ -53,6 +54,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
 
       <main className="flex-1">
         <ChapterAboutSection about={chapter.about} />
+        <ChapterEventsSection events={chapter.events} />
       </main>
 
       <Footer />

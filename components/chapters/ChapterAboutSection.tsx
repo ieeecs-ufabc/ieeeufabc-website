@@ -6,17 +6,15 @@ type ChapterAboutSectionProps = {
   about: ChapterPageData["about"];
 };
 
-export function ChapterAboutSection({
-  about,
-}: ChapterAboutSectionProps) {
+export function ChapterAboutSection({ about }: ChapterAboutSectionProps) {
   return (
     <section
       id="computer-society"
       aria-labelledby="chapter-about-title"
       className="scroll-mt-16 bg-ieee-blue text-white"
     >
-      <div className="grid lg:min-h-[30rem] lg:grid-cols-[48%_52%]">
-        <div className="px-6 py-12 sm:px-8 lg:px-10 lg:py-10">
+      <div className="grid lg:min-h-120 lg:grid-cols-2">
+        <div className="px-6 py-12 sm:px-8 lg:px-14 lg:py-20">
           <div className="max-w-xl">
             <h1
               id="chapter-about-title"
@@ -29,7 +27,7 @@ export function ChapterAboutSection({
               {about.paragraphs.map((paragraph, index) => (
                 <p
                   key={`${index}-${paragraph}`}
-                  className="text-lg leading-7 text-white/95 sm:text-xl"
+                  className="text-xl leading-8 text-white/95 sm:text-2xl sm:leading-9"
                 >
                   {paragraph}
                 </p>

@@ -46,40 +46,44 @@ export const homeHeaderNavigationItems: readonly HeaderNavigationItem[] = [
   },
 ];
 
-export const navigationItems: readonly NavigationItem[] = [
+export const footerNavigationItems: readonly NavigationItem[] = [
   {
     id: "inicio",
     label: "Início",
-    href: "#inicio",
+    href: "/#inicio",
   },
   {
     id: "ramo",
     label: "O Ramo",
-    href: "#ramo",
+    href: "/#ramo",
   },
   {
-    id: "capitulos",
-    label: "Capítulos",
-    href: "#capitulos",
+    id: "computer-society",
+    label: "Computer Society",
+    href: "/capitulos/computer-society#computer-society",
   },
   {
     id: "impacto",
     label: "Nosso impacto",
-    href: "#nosso-impacto",
-  },
-  {
-    id: "voluntarios",
-    label: "Voluntários",
-    href: "#voluntarios",
+    href: "/#nosso-impacto",
   },
   {
     id: "diretoria",
     label: "Diretoria",
-    href: "#diretoria",
+    href: "/#diretoria",
   },
   {
     id: "faca-parte",
     label: "Faça parte",
-    href: "#faca-parte",
+    href: "/#faca-parte",
   },
+
+  /* Adicionar o trecho "Voluntários" após aprovação do PR pendente */
+  /*
+  {
+    id: "voluntarios",
+    label: "Voluntários",
+    href: "/#voluntarios",
+  },
+  */
 ];

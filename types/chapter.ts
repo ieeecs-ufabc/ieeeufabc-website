@@ -16,8 +16,23 @@ export type ChapterPageData = {
     image: ChapterImage;
   };
 
+  events: {
+    title: string;
+    description: string;
+    items: readonly ChapterEvent[];
+  };
+
   seo: {
     title: string;
     description: string;
   };
+};
+
+export type ChapterEvent = {
+  id: string;
+  title: string;
+  description: string;
+  eventDate: string;
+  registrationDeadline: string;
+  image: ChapterImage;
 };

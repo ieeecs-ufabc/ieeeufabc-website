@@ -19,8 +19,8 @@ export const chapterPages: readonly ChapterPageData[] = [
         "Donec vel sapien congue erat auctor cursus. Proin in dignissim velit. Vivamus ornare imperdiet egestas.",
       ],
       image: {
-        src: "/images/opportunities/computer-society.png",
-        alt: "Integrantes da Computer Society desenvolvendo atividades no laboratório",
+        src: "/images/chapter-pages/computer-society/about/computer-society-image.png",
+        alt: "Integrantes da IEEE Computer Society UFABC",
       },
     },
 

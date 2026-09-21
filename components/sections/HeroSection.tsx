@@ -13,18 +13,18 @@ export function HeroSection() {
                         alt="IEEE"
                         width={429}
                         height={131}
-                        className="w-full max-w-[429px] h-auto object-contain sm:w-[429px] sm:h-[131px]"
+                        className="w-full max-w-107.25 h-auto object-contain sm:w-107.25 sm:h-32.75"
                         priority
                     />
 
-                    <div className="hidden sm:block h-[247px] lg:h-[246px] w-[10px] bg-ieee-blue rounded-full shrink-0" />
+                    <div className="hidden sm:block h-61.75 lg:h-61.5 w-2.5 bg-ieee-blue rounded-full shrink-0" />
 
                     <Image
                         src="/images/logos/ieee-ufabc-logo-hero.svg"
                         alt="IEEE UFABC"
                         width={526}
                         height={246}
-                        className="w-full max-w-[526px] h-auto object-contain sm:w-[526px] sm:h-[246px]"
+                        className="w-full max-w-131.5 h-auto object-contain sm:w-131.5 sm:h-61.5"
                         priority
                     />
 

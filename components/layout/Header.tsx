@@ -2,12 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {
-  useEffect,
-  useRef,
-  useState,
-  type MouseEvent,
-} from "react";
+import { useEffect, useRef, useState, type MouseEvent } from "react";
 
 import {
   homeHeaderNavigationItems,
@@ -18,9 +13,7 @@ type HeaderProps = {
   items?: readonly HeaderNavigationItem[];
 };
 
-export function Header({
-  items = homeHeaderNavigationItems,
-}: HeaderProps) {
+export function Header({ items = homeHeaderNavigationItems }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openSubmenuId, setOpenSubmenuId] = useState<string | null>(null);
   const headerRef = useRef<HTMLElement>(null);
@@ -36,22 +29,16 @@ export function Header({
   }
 
   function toggleSubmenu(itemId: string) {
-    setOpenSubmenuId((currentId) =>
-      currentId === itemId ? null : itemId,
-    );
+    setOpenSubmenuId((currentId) => (currentId === itemId ? null : itemId));
   }
 
-  function handleLinkClick(
-    event: MouseEvent<HTMLAnchorElement>,
-    href: string,
-  ) {
+  function handleLinkClick(event: MouseEvent<HTMLAnchorElement>, href: string) {
     closeNavigation();
 
     const targetUrl = new URL(href, window.location.href);
     const targetId = decodeURIComponent(targetUrl.hash.slice(1));
 
-    const isCurrentPage =
-      targetUrl.pathname === window.location.pathname;
+    const isCurrentPage = targetUrl.pathname === window.location.pathname;
 
     if (!isCurrentPage || !targetId) {
       return;
@@ -114,10 +101,7 @@ export function Header({
     document.addEventListener("pointerdown", handlePointerDown);
 
     return () => {
-      document.removeEventListener(
-        "pointerdown",
-        handlePointerDown,
-      );
+      document.removeEventListener("pointerdown", handlePointerDown);
     };
   }, [openSubmenuId]);
 
@@ -146,7 +130,22 @@ export function Header({
         <nav className="hidden md:block" aria-label="Navegação principal">
           <ul className="flex items-center gap-8">
             {items.map((item) => (
-              <li key={item.id} className="relative">
+              <li
+                key={item.id}
+                className="relative"
+                onPointerEnter={(event) => {
+                  if ("children" in item && event.pointerType === "mouse") {
+                    setOpenSubmenuId(item.id);
+                  }
+                }}
+                onPointerLeave={(event) => {
+                  if ("children" in item && event.pointerType === "mouse") {
+                    setOpenSubmenuId((currentId) =>
+                      currentId === item.id ? null : currentId,
+                    );
+                  }
+                }}
+              >
                 {"children" in item ? (
                   <>
                     <button
@@ -162,9 +161,7 @@ export function Header({
                       <span
                         aria-hidden="true"
                         className={`text-xs transition-transform ${
-                          openSubmenuId === item.id
-                            ? "rotate-180"
-                            : ""
+                          openSubmenuId === item.id ? "rotate-180" : ""
                         }`}
                       >
                         ▼
@@ -197,9 +194,7 @@ export function Header({
                 ) : (
                   <Link
                     href={item.href}
-                    onClick={(event) =>
-                      handleLinkClick(event, item.href)
-                    }
+                    onClick={(event) => handleLinkClick(event, item.href)}
                     className="text-base font-semibold text-white transition-colors hover:text-white/75 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
                   >
                     {item.label}
@@ -265,9 +260,7 @@ export function Header({
                       <span
                         aria-hidden="true"
                         className={`text-xs transition-transform ${
-                          openSubmenuId === item.id
-                            ? "rotate-180"
-                            : ""
+                          openSubmenuId === item.id ? "rotate-180" : ""
                         }`}
                       >
                         ▼
@@ -298,9 +291,7 @@ export function Header({
                 ) : (
                   <Link
                     href={item.href}
-                    onClick={(event) =>
-                      handleLinkClick(event, item.href)
-                    }
+                    onClick={(event) => handleLinkClick(event, item.href)}
                     className="block rounded-md px-3 py-3 text-base font-semibold text-white transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-white"
                   >
                     {item.label}

@@ -6,7 +6,7 @@ export function ImpactSection() {
             </h1>
 
 
-            <p className="mt-4 text-base font-normal leading-7 text-content-secondary sm:text-lg lg:text-xl lg:leading-8 text-white">
+            <p className="mt-4 text-base font-normal leading-7 text-white sm:text-lg lg:text-xl lg:leading-8 ">
                 Maecenas tincidunt justo metus. Donec malesuada ipsum eu tortor rhoncus sollicitudin.
             </p>
 

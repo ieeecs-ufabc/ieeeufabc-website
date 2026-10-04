@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { navigationItems } from '@/data/navigationItems'
+import { footerNavigationItems } from "@/data/navigationItems";
 
 const socialMedias = [
     {
@@ -53,7 +53,7 @@ export function Footer() {
                         <div>
                             <h2 className="text-xl font-bold mb-4">Mapa do Site</h2>
                             <ul className="space-y-2 text-sm text-white/90">
-                                {navigationItems.map((item) => (
+                                {footerNavigationItems.map((item) => (
                                     <li key={item.id}>
                                         <a href={item.href} className="hover:underline transition-colors">
                                             {item.label}

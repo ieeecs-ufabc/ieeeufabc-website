@@ -85,7 +85,7 @@ export const footerNavigationItems: readonly NavigationItem[] = [
   {
     id: "computer-society",
     label: "Computer Society",
-    href: "/capitulos/computer-society#computer-society",
+    href: "/capitulos/computer-society",
   },
   {
     id: "impacto",

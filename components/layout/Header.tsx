@@ -173,7 +173,7 @@ export function Header({ items = homeHeaderNavigationItems }: HeaderProps) {
                         id={`submenu-${item.id}`}
                         className="absolute left-1/2 top-full z-50 w-80 max-w-[calc(100vw-2rem)] -translate-x-1/2 pt-3"
                       >
-                        <ul className="rounded-lg bg-white p-2 text-content-primary shadow-lg ring-1 ring-black/10">
+                        <ul className="bg-white p-2 text-content-primary shadow-lg ring-1 ring-black/10">
                           {item.children.map((child) => (
                             <li key={child.id}>
                               <Link

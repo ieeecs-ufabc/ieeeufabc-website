@@ -6,6 +6,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { ChaptersSection } from "@/components/sections/ChaptersSection";
 import { ImpactSection } from "@/components/sections/ImpactSection";
 import { Footer } from "@/components/layout/Footer";
+import VolunteersSection from "@/components/sections/VolunteersSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <ChaptersSection />
         <ImpactSection />
         <BoardSection />
+        <VolunteersSection/>
         <JoinIEEESection />
       </main>
 

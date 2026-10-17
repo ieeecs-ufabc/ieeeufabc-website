@@ -16,6 +16,20 @@
   --color-content-secondary: var(--content-secondary);
   --font-sans: var(--font-inter), "Inter", sans-serif;
   --font-mono: var(--font-geist-mono);
+
+  --animate-infinite-scroll: infinite-scroll 30s linear infinite;
+
+  @keyframes infinite-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-25%)); }
+  }
+
+  --mask-gradient: linear-gradient(to right, 
+    transparent, 
+    black 15%, 
+    black 85%, 
+    transparent
+  );
 }
 
 html {
@@ -28,4 +42,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), "Inter", sans-serif;
+}
+
+.mask-infinite-scroll {
+  mask-image: var(--mask-gradient);
+  -webkit-mask-image: var(--mask-gradient); /* Compatibilidade Safari */
 }

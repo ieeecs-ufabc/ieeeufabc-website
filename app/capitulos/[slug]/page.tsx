@@ -7,6 +7,8 @@ import { ChapterAboutSection } from "@/components/chapters/ChapterAboutSection";
 import { ChapterEventsSection } from "@/components/chapters/ChapterEventsSection";
 
 import { chapterPages, getChapterPageBySlug } from "@/data/chapterPages";
+import VolunteersSection from "@/components/sections/VolunteersSection";
+import { BoardSection } from "@/components/sections/BoardSection";
 
 type ChapterPageProps = {
   params: Promise<{
@@ -54,6 +56,8 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
 
       <main className="flex-1">
         <ChapterAboutSection about={chapter.about} />
+        <BoardSection/>
+        <VolunteersSection />
         <ChapterEventsSection events={chapter.events} />
       </main>
 

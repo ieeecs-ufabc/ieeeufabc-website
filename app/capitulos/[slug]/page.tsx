@@ -62,6 +62,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
         <VolunteersSection />
         <ProjectsSection/>
         <ChapterEventsSection events={chapter.events} />
+        <FollowOurWorkSection />
       </main>
 
       <Footer />
